@@ -54,6 +54,7 @@ st.markdown("""
         background: rgba(255, 255, 255, 0.1);
         padding: 1.5rem;
         border-radius: 10px;
+        color: #1f2937 !important;
         margin: 0.5rem 0;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.2);
