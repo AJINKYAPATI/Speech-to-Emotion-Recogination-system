@@ -64,10 +64,12 @@ st.markdown("""
     }
     
     .sidebar-content {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 1rem;
-        border-radius: 10px;
-        margin-bottom: 1rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #1f2937 !important;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
     }
     
     .audio-player {
