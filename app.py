@@ -331,8 +331,7 @@ with col1:
     "Upload Audio File",
     type=['wav', 'mp3', 'm4a', 'ogg', 'flac', 'aac', 'wma']
 )
-        help="Select an audio file containing speech for emotion analysis"
-    )
+       
     
     if uploaded_file is not None:
         st.session_state.audio_file = uploaded_file
