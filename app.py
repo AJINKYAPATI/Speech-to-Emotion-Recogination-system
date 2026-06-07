@@ -328,8 +328,9 @@ with col1:
     """, unsafe_allow_html=True)
     
     uploaded_file = st.file_uploader(
-        "Upload Audio File",
-        type=["wav"],
+    "Upload Audio File",
+    type=['wav', 'mp3', 'm4a', 'ogg', 'flac', 'aac', 'wma']
+)
         help="Select an audio file containing speech for emotion analysis"
     )
     
