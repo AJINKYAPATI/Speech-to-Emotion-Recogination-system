@@ -136,9 +136,16 @@ def load_models():
     try:
         st.write("Loading model...")
 
-        MODEL_PATH = "model/best_lstm_model.keras"
-        SCALER_PATH = "model/scaler.joblib"
-        ENCODER_PATH = "model/encoder.joblib"
+        st.write("Loading model...")
+model = load_model(MODEL_PATH, compile=False)
+
+st.write("Loading scaler...")
+scaler = load(SCALER_PATH)
+
+st.write("Loading encoder...")
+encoder = load(ENCODER_PATH)
+
+st.success("All files loaded successfully")
 
         model = load_model(MODEL_PATH, compile=False)
         st.write("Model loaded")
