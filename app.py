@@ -45,7 +45,7 @@ st.markdown("""
         padding: 2rem;
         border-radius: 15px;
         margin: 1rem 0;
-        color: white;
+        color: #1f2937 !important;
         text-align: center;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
@@ -55,6 +55,7 @@ st.markdown("""
         padding: 1.5rem;
         border-radius: 10px;
         margin: 0.5rem 0;
+        color: #1f2937 !important;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -83,7 +84,7 @@ st.markdown("""
     
     .success-message {
         background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-        color: white;
+        color: #1f2937 !important;       
         padding: 1rem;
         border-radius: 10px;
         margin: 1rem 0;
@@ -93,7 +94,7 @@ st.markdown("""
     
     .warning-message {
         background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
-        color: white;
+        color: #1f2937 !important;
         padding: 1rem;
         border-radius: 10px;
         margin: 1rem 0;
