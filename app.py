@@ -137,12 +137,13 @@ def load_models():
         MODEL_PATH = "model/best_lstm_model.keras"
         SCALER_PATH = "./model/scaler.joblib"
         ENCODER_PATH = "model/encoder.joblib"
-        
-        model = load_model(MODEL_PATH)
+
+        model = load_model(MODEL_PATH, compile=False)
         scaler = load(SCALER_PATH)
         encoder = load(ENCODER_PATH)
-        
+
         return model, scaler, encoder
+
     except Exception as e:
         st.error(f"Error loading models: {str(e)}")
         return None, None, None
