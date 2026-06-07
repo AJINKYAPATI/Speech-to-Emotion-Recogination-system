@@ -136,16 +136,9 @@ def load_models():
     try:
         st.write("Loading model...")
 
-        st.write("Loading model...")
-model = load_model(MODEL_PATH, compile=False)
-
-st.write("Loading scaler...")
-scaler = load(SCALER_PATH)
-
-st.write("Loading encoder...")
-encoder = load(ENCODER_PATH)
-
-st.success("All files loaded successfully")
+        MODEL_PATH = "model/best_lstm_model.keras"
+        SCALER_PATH = "model/scaler.joblib"
+        ENCODER_PATH = "model/encoder.joblib"
 
         model = load_model(MODEL_PATH, compile=False)
         st.write("Model loaded")
@@ -161,7 +154,6 @@ st.success("All files loaded successfully")
     except Exception as e:
         st.error(f"Error loading models: {str(e)}")
         return None, None, None
-
     
 #   Emotion mapping with emojis and colors
 emotion_mapping = {
