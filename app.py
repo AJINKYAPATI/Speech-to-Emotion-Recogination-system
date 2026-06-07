@@ -134,13 +134,20 @@ if 'results' not in st.session_state:
 @st.cache_resource
 def load_models():
     try:
+        st.write("Loading model...")
+
         MODEL_PATH = "model/best_lstm_model.keras"
-        SCALER_PATH = "./model/scaler.joblib"
+        SCALER_PATH = "model/scaler.joblib"
         ENCODER_PATH = "model/encoder.joblib"
 
         model = load_model(MODEL_PATH, compile=False)
+        st.write("Model loaded")
+
         scaler = load(SCALER_PATH)
+        st.write("Scaler loaded")
+
         encoder = load(ENCODER_PATH)
+        st.write("Encoder loaded")
 
         return model, scaler, encoder
 
