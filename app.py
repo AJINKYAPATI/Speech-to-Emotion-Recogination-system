@@ -64,12 +64,22 @@ st.markdown("""
         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     }
     
-    .sidebar-content {
+.sidebar-content {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #1f2937 !important;
+    color: #111827 !important;
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+
+.sidebar-content h1,
+.sidebar-content h2,
+.sidebar-content h3,
+.sidebar-content h4,
+.sidebar-content p,
+.sidebar-content li {
+    color: #111827 !important;
+}
 }
     }
     
